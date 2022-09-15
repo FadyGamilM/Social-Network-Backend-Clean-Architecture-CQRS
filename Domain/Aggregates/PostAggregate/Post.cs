@@ -7,11 +7,8 @@ namespace Social.Domain.Aggregates.PostAggregate
    {
       //! Private Constructor which disable the creation of this Post without the factory method we have enabled 
       private Post()
-      { 
-         // create emtpy list of comments and interactions with each new created post "business logic rule.."
-         Comments = new List<PostComment>();
-         Interactions = new List<PostInteraction>();
-      }
+      {   }
+      
       // entity identifier of the post 
       public Guid PostId {get; private set;}
 
@@ -25,12 +22,12 @@ namespace Social.Domain.Aggregates.PostAggregate
       public string TextContent {get; private set;}
 
       // list of comments related to each post
-      private readonly IList<PostComment> _Comments;
-      public IEnumerable<PostComment> Comments {get; private set;}
+      private readonly List<PostComment> _Comments = new List<PostComment>();
+      public IEnumerable<PostComment> Comments {get { return _Comments; }}
 
       // lsit of interactions and emojs
-      private readonly IList<PostInteraction> _Interactions;
-      public IEnumerable<PostInteraction> Interactions {get; private set;}
+      private readonly List<PostInteraction> _Interactions = new List<PostInteraction>();
+      public IEnumerable<PostInteraction> Interactions {get {return _Interactions;}}
       public DateTime CreatedAt {get; private set;}
       public DateTime LastModified {get; private set;}
    
@@ -61,6 +58,24 @@ namespace Social.Domain.Aggregates.PostAggregate
       public void AddComment (PostComment comment)
       {
          _Comments.Add(comment);
+      }
+
+      //! To delete a comment for an existing post
+      public void RemoveComment (PostComment comment)
+      {
+         _Comments.Remove(comment);
+      }
+
+      //! To add a new interaction to an existing post
+      public void AddInteraction (PostInteraction interaction)
+      {
+         _Interactions.Add(interaction);
+      }
+
+      //! To remove an interaction from the post
+      public void RemoveInteraction (PostInteraction interaction)
+      {
+         _Interactions.Remove(interaction);
       }
    }
 }
