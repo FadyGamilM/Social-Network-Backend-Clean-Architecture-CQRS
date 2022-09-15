@@ -1,0 +1,12 @@
+F:\__111 COMPUTER SCIENCE\4th CSE 2022\dotnet\dev\Social-Network-Backend-Clean-Architecture-CQRS\Domain\bin\Debug\net6.0\Domain.deps.json
+F:\__111 COMPUTER SCIENCE\4th CSE 2022\dotnet\dev\Social-Network-Backend-Clean-Architecture-CQRS\Domain\bin\Debug\net6.0\Domain.dll
+F:\__111 COMPUTER SCIENCE\4th CSE 2022\dotnet\dev\Social-Network-Backend-Clean-Architecture-CQRS\Domain\bin\Debug\net6.0\Domain.pdb
+F:\__111 COMPUTER SCIENCE\4th CSE 2022\dotnet\dev\Social-Network-Backend-Clean-Architecture-CQRS\Domain\obj\Debug\net6.0\Domain.csproj.AssemblyReference.cache
+F:\__111 COMPUTER SCIENCE\4th CSE 2022\dotnet\dev\Social-Network-Backend-Clean-Architecture-CQRS\Domain\obj\Debug\net6.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+F:\__111 COMPUTER SCIENCE\4th CSE 2022\dotnet\dev\Social-Network-Backend-Clean-Architecture-CQRS\Domain\obj\Debug\net6.0\Domain.AssemblyInfoInputs.cache
+F:\__111 COMPUTER SCIENCE\4th CSE 2022\dotnet\dev\Social-Network-Backend-Clean-Architecture-CQRS\Domain\obj\Debug\net6.0\Domain.AssemblyInfo.cs
+F:\__111 COMPUTER SCIENCE\4th CSE 2022\dotnet\dev\Social-Network-Backend-Clean-Architecture-CQRS\Domain\obj\Debug\net6.0\Domain.csproj.CoreCompileInputs.cache
+F:\__111 COMPUTER SCIENCE\4th CSE 2022\dotnet\dev\Social-Network-Backend-Clean-Architecture-CQRS\Domain\obj\Debug\net6.0\Domain.dll
+F:\__111 COMPUTER SCIENCE\4th CSE 2022\dotnet\dev\Social-Network-Backend-Clean-Architecture-CQRS\Domain\obj\Debug\net6.0\refint\Domain.dll
+F:\__111 COMPUTER SCIENCE\4th CSE 2022\dotnet\dev\Social-Network-Backend-Clean-Architecture-CQRS\Domain\obj\Debug\net6.0\Domain.pdb
+F:\__111 COMPUTER SCIENCE\4th CSE 2022\dotnet\dev\Social-Network-Backend-Clean-Architecture-CQRS\Domain\obj\Debug\net6.0\ref\Domain.dll

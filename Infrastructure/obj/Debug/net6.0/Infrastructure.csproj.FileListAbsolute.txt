@@ -1,0 +1,17 @@
+F:\__111 COMPUTER SCIENCE\4th CSE 2022\dotnet\dev\Social-Network-Backend-Clean-Architecture-CQRS\Infrastructure\bin\Debug\net6.0\Infrastructure.deps.json
+F:\__111 COMPUTER SCIENCE\4th CSE 2022\dotnet\dev\Social-Network-Backend-Clean-Architecture-CQRS\Infrastructure\bin\Debug\net6.0\Infrastructure.runtimeconfig.json
+F:\__111 COMPUTER SCIENCE\4th CSE 2022\dotnet\dev\Social-Network-Backend-Clean-Architecture-CQRS\Infrastructure\bin\Debug\net6.0\Infrastructure.dll
+F:\__111 COMPUTER SCIENCE\4th CSE 2022\dotnet\dev\Social-Network-Backend-Clean-Architecture-CQRS\Infrastructure\bin\Debug\net6.0\Infrastructure.pdb
+F:\__111 COMPUTER SCIENCE\4th CSE 2022\dotnet\dev\Social-Network-Backend-Clean-Architecture-CQRS\Infrastructure\bin\Debug\net6.0\Domain.dll
+F:\__111 COMPUTER SCIENCE\4th CSE 2022\dotnet\dev\Social-Network-Backend-Clean-Architecture-CQRS\Infrastructure\bin\Debug\net6.0\Domain.pdb
+F:\__111 COMPUTER SCIENCE\4th CSE 2022\dotnet\dev\Social-Network-Backend-Clean-Architecture-CQRS\Infrastructure\obj\Debug\net6.0\Infrastructure.csproj.AssemblyReference.cache
+F:\__111 COMPUTER SCIENCE\4th CSE 2022\dotnet\dev\Social-Network-Backend-Clean-Architecture-CQRS\Infrastructure\obj\Debug\net6.0\Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+F:\__111 COMPUTER SCIENCE\4th CSE 2022\dotnet\dev\Social-Network-Backend-Clean-Architecture-CQRS\Infrastructure\obj\Debug\net6.0\Infrastructure.AssemblyInfoInputs.cache
+F:\__111 COMPUTER SCIENCE\4th CSE 2022\dotnet\dev\Social-Network-Backend-Clean-Architecture-CQRS\Infrastructure\obj\Debug\net6.0\Infrastructure.AssemblyInfo.cs
+F:\__111 COMPUTER SCIENCE\4th CSE 2022\dotnet\dev\Social-Network-Backend-Clean-Architecture-CQRS\Infrastructure\obj\Debug\net6.0\Infrastructure.csproj.CoreCompileInputs.cache
+F:\__111 COMPUTER SCIENCE\4th CSE 2022\dotnet\dev\Social-Network-Backend-Clean-Architecture-CQRS\Infrastructure\obj\Debug\net6.0\Infrastructure.csproj.CopyComplete
+F:\__111 COMPUTER SCIENCE\4th CSE 2022\dotnet\dev\Social-Network-Backend-Clean-Architecture-CQRS\Infrastructure\obj\Debug\net6.0\Infrastructure.dll
+F:\__111 COMPUTER SCIENCE\4th CSE 2022\dotnet\dev\Social-Network-Backend-Clean-Architecture-CQRS\Infrastructure\obj\Debug\net6.0\refint\Infrastructure.dll
+F:\__111 COMPUTER SCIENCE\4th CSE 2022\dotnet\dev\Social-Network-Backend-Clean-Architecture-CQRS\Infrastructure\obj\Debug\net6.0\Infrastructure.pdb
+F:\__111 COMPUTER SCIENCE\4th CSE 2022\dotnet\dev\Social-Network-Backend-Clean-Architecture-CQRS\Infrastructure\obj\Debug\net6.0\Infrastructure.genruntimeconfig.cache
+F:\__111 COMPUTER SCIENCE\4th CSE 2022\dotnet\dev\Social-Network-Backend-Clean-Architecture-CQRS\Infrastructure\obj\Debug\net6.0\ref\Infrastructure.dll

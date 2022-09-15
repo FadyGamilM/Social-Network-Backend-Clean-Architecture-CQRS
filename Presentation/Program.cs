@@ -1,5 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Versioning;
+using Social.Infrastructure.Data;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
@@ -7,6 +9,13 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+//!=> inject the db context with postgres database server
+//*=> connect to postgres through the AppDbContext
+builder.Services.AddEntityFrameworkNpgsql().AddDbContext<AppDbContext>(
+    options => options.UseNpgsql(
+        builder.Configuration.GetConnectionString("conn")
+    )
+);
 //!=> utilize the api versioning nuget package
 builder.Services.AddApiVersioning(
    options => 
