@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "QytoH4ORwucAR7xEzYJ46WIR2NEFbeQcPUG9YxS2dukxosgVceoFoacxlvV+P8OrSOSUwJYjOkRi1bnpEw/zqg==",
+  "dgSpecHash": "X90P9xaCk1DJWrEP2uh1n9sZx+9+Jz2sIKppXqdTonUjBUHSzhHR8PxuhJRduBv/K8jb3hn/uk4rzjAEg1zPrA==",
   "success": true,
   "projectFilePath": "F:\\__111 COMPUTER SCIENCE\\4th CSE 2022\\dotnet\\dev\\Social-Network-Backend-Clean-Architecture-CQRS\\Application\\Application.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\vip\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
+    "C:\\Users\\vip\\.nuget\\packages\\mediatr\\10.0.1\\mediatr.10.0.1.nupkg.sha512",
+    "C:\\Users\\vip\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
+    "C:\\Users\\vip\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512"
+  ],
   "logs": []
 }
