@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "KHNZqgBWqiCsi6NmQPchgF8fK73f0261IqLNIEKQeYTu/JDlRu9FusAiBihwOq8JxEz9hzZGo1vQEe4m/H+iTA==",
+  "dgSpecHash": "HN86F5CgAtBfWSt7Tycpsh4CJ1Z40KpPp+lCXJ4hy2Q/w/BJ0M7ePDq5xSgj1TaaTuXlHpDvfibfa9jrybnP7w==",
   "success": true,
   "projectFilePath": "F:\\__111 COMPUTER SCIENCE\\4th CSE 2022\\dotnet\\dev\\Social-Network-Backend-Clean-Architecture-CQRS\\Presentation\\Presentation.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\vip\\.nuget\\packages\\microsoft.aspnetcore.mvc.versioning\\5.0.0\\microsoft.aspnetcore.mvc.versioning.5.0.0.nupkg.sha512",
+    "C:\\Users\\vip\\.nuget\\packages\\microsoft.aspnetcore.mvc.versioning.apiexplorer\\5.0.0\\microsoft.aspnetcore.mvc.versioning.apiexplorer.5.0.0.nupkg.sha512",
     "C:\\Users\\vip\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\vip\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
     "C:\\Users\\vip\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
