@@ -1,0 +1,17 @@
+F:\__111 COMPUTER SCIENCE\4th CSE 2022\dotnet\dev\Social-Network-Backend-Clean-Architecture-CQRS\Application\obj\Debug\net6.0\Application.csproj.AssemblyReference.cache
+F:\__111 COMPUTER SCIENCE\4th CSE 2022\dotnet\dev\Social-Network-Backend-Clean-Architecture-CQRS\Application\obj\Debug\net6.0\Application.GeneratedMSBuildEditorConfig.editorconfig
+F:\__111 COMPUTER SCIENCE\4th CSE 2022\dotnet\dev\Social-Network-Backend-Clean-Architecture-CQRS\Application\obj\Debug\net6.0\Application.AssemblyInfoInputs.cache
+F:\__111 COMPUTER SCIENCE\4th CSE 2022\dotnet\dev\Social-Network-Backend-Clean-Architecture-CQRS\Application\obj\Debug\net6.0\Application.AssemblyInfo.cs
+F:\__111 COMPUTER SCIENCE\4th CSE 2022\dotnet\dev\Social-Network-Backend-Clean-Architecture-CQRS\Application\obj\Debug\net6.0\Application.csproj.CoreCompileInputs.cache
+F:\__111 COMPUTER SCIENCE\4th CSE 2022\dotnet\dev\Social-Network-Backend-Clean-Architecture-CQRS\Application\bin\Debug\net6.0\Application.deps.json
+F:\__111 COMPUTER SCIENCE\4th CSE 2022\dotnet\dev\Social-Network-Backend-Clean-Architecture-CQRS\Application\bin\Debug\net6.0\Application.dll
+F:\__111 COMPUTER SCIENCE\4th CSE 2022\dotnet\dev\Social-Network-Backend-Clean-Architecture-CQRS\Application\bin\Debug\net6.0\Application.pdb
+F:\__111 COMPUTER SCIENCE\4th CSE 2022\dotnet\dev\Social-Network-Backend-Clean-Architecture-CQRS\Application\bin\Debug\net6.0\Domain.dll
+F:\__111 COMPUTER SCIENCE\4th CSE 2022\dotnet\dev\Social-Network-Backend-Clean-Architecture-CQRS\Application\bin\Debug\net6.0\Infrastructure.dll
+F:\__111 COMPUTER SCIENCE\4th CSE 2022\dotnet\dev\Social-Network-Backend-Clean-Architecture-CQRS\Application\bin\Debug\net6.0\Domain.pdb
+F:\__111 COMPUTER SCIENCE\4th CSE 2022\dotnet\dev\Social-Network-Backend-Clean-Architecture-CQRS\Application\bin\Debug\net6.0\Infrastructure.pdb
+F:\__111 COMPUTER SCIENCE\4th CSE 2022\dotnet\dev\Social-Network-Backend-Clean-Architecture-CQRS\Application\obj\Debug\net6.0\Application.csproj.CopyComplete
+F:\__111 COMPUTER SCIENCE\4th CSE 2022\dotnet\dev\Social-Network-Backend-Clean-Architecture-CQRS\Application\obj\Debug\net6.0\Application.dll
+F:\__111 COMPUTER SCIENCE\4th CSE 2022\dotnet\dev\Social-Network-Backend-Clean-Architecture-CQRS\Application\obj\Debug\net6.0\refint\Application.dll
+F:\__111 COMPUTER SCIENCE\4th CSE 2022\dotnet\dev\Social-Network-Backend-Clean-Architecture-CQRS\Application\obj\Debug\net6.0\Application.pdb
+F:\__111 COMPUTER SCIENCE\4th CSE 2022\dotnet\dev\Social-Network-Backend-Clean-Architecture-CQRS\Application\obj\Debug\net6.0\ref\Application.dll
