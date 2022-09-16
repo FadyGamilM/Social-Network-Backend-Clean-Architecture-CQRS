@@ -1,6 +1,4 @@
 using AutoMapper;
-using Social.Domain.Aggregates.UserProfileAggregate;
-using Social.Application.UserProfileCQRS.Commands;
 using Social.Application.UserProfileCQRS.Commands;
 using Social.Domain.ValueObjects.UserProfile;
 

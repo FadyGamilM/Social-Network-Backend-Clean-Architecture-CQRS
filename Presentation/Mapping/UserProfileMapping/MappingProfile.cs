@@ -17,6 +17,8 @@ namespace Social.Presentation.Mapping.UserProfileMapping
          CreateMap<UserProfile, GetProfile>().ReverseMap();
          CreateMap<Presentation.Contracts.ProfileContracts.Responses.BasicInfo,
                                Domain.ValueObjects.UserProfile.BasicInfo>().ReverseMap();
+         // for PUT request 
+         CreateMap<UpdateUserProfileCommand, UpdateProfile>().ReverseMap();
       }
    }
 }
