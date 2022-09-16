@@ -8,3 +8,4 @@ namespace Social.Presentation.Contracts.ProfileContracts.Responses
       public DateTime LastModified {get; set;}
    }
 }
+
