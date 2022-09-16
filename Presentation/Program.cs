@@ -2,6 +2,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Versioning;
 using Social.Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
+using MediatR;
+using Social.Application.UserProfileCQRS.Queries;
 
 var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
@@ -16,6 +18,10 @@ builder.Services.AddEntityFrameworkNpgsql().AddDbContext<AppDbContext>(
         builder.Configuration.GetConnectionString("conn")
     )
 );
+//!=> utlize automapper
+builder.Services.AddAutoMapper(typeof(Program));
+//!=> Utlize the mediator library 
+builder.Services.AddMediatR(typeof(GetAllProfilesQuery));
 //!=> utilize the api versioning nuget package
 builder.Services.AddApiVersioning(
    options => 
@@ -32,6 +38,14 @@ builder.Services.AddApiVersioning(
 );
 
 var app = builder.Build();
+
+// Configure the HTTP request pipeline.
+if (app.Environment.IsDevelopment())
+{
+    app.UseSwagger();
+    app.UseSwaggerUI();
+}
+
 app.UseHttpsRedirection();
 app.UseAuthorization();
 app.MapControllers();

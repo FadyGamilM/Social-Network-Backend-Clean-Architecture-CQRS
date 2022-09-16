@@ -40,7 +40,17 @@ namespace Social.Presentation.Controllers.V1
       [HttpGet("{id}")]
       public async Task<IActionResult> GetProfileById([FromRoute] string profileId)
       {
-         return Ok();
+         //* define the query object to send to the mediator
+         var query = new GetProfileByIdQuery
+         {
+            ProfileId = Guid.Parse(profileId),
+         };
+         //* utilize the mediator to get the response
+         var response = await _mediator.Send(query);
+         //* map the response to the api contract
+         var profile = _mapper.Map<GetProfile>(response);
+         //* return the response to the end user
+         return Ok(profile);
       }
 
       [HttpPost("")]
