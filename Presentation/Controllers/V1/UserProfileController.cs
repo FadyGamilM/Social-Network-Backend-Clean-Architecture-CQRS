@@ -70,5 +70,35 @@ namespace Social.Presentation.Controllers.V1
          return CreatedAtAction(nameof(GetProfileById), new { id = response.UserProfileId}, userprofile);
       }
 
+      // PATCH req : update any field of an existing user profile
+      [HttpPatch("{id}")]
+      public async Task<IActionResult> UpdateProfile([FromRoute] string id, [FromBody] UpdateProfile profileDto)
+      {
+         return Ok();         
+      }
+
    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
