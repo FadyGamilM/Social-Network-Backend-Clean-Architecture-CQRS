@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "RaQ5fxMW3uG7PQCOtSIJYt78OpT3putNnFcx6CG1je6gMsByYuvLejDxzzWZ2mujgh1VBMns0I+UTz8ocjNB1Q==",
+  "dgSpecHash": "0c0xFqFUwtK25/cSIOtttGEfCMD3eUeZTzDbcoz3hrC4kmtLBymWHtXH0J1o+nD1aX0cZdU5bu1b8X5NpsXHtw==",
   "success": true,
   "projectFilePath": "F:\\__111 COMPUTER SCIENCE\\4th CSE 2022\\dotnet\\dev\\Social-Network-Backend-Clean-Architecture-CQRS\\Presentation\\Presentation.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\vip\\.nuget\\packages\\automapper\\11.0.0\\automapper.11.0.0.nupkg.sha512",
+    "C:\\Users\\vip\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
     "C:\\Users\\vip\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
     "C:\\Users\\vip\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\vip\\.nuget\\packages\\mediatr\\10.0.1\\mediatr.10.0.1.nupkg.sha512",

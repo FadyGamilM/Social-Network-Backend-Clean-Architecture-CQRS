@@ -4,6 +4,7 @@ using Social.Presentation.Contracts.ProfileContracts.Requests;
 using AutoMapper;
 using Social.Application.UserProfileCQRS.Commands;
 using Social.Presentation.Contracts.ProfileContracts.Responses;
+using Social.Application.UserProfileCQRS.Queries;
 
 namespace Social.Presentation.Controllers.V1
 {
@@ -23,7 +24,17 @@ namespace Social.Presentation.Controllers.V1
       [HttpGet("")]
       public async Task<IActionResult> GetAllProfiles()
       {
-         return Ok();
+         //* define obejct instance of our query
+         var query = new GetAllProfilesQuery();
+
+         //* utlize the mediator to get the response
+         var response = await _mediator.Send(query);
+
+         //* map the response according to the API contract
+         var profiles = _mapper.Map<IEnumerable<GetProfile>>(response);
+
+         //* return the response
+         return Ok(profiles);
       }
 
       [HttpGet("{id}")]
@@ -46,7 +57,7 @@ namespace Social.Presentation.Controllers.V1
          //* Map the response to the contract 
          var userprofile = _mapper.Map<GetProfile>(response);
 
-         return CreatedAtAction(nameof(GetProfileById), new Object{ id = response.UserProfileId}, userprofile);
+         return CreatedAtAction(nameof(GetProfileById), new { id = response.UserProfileId}, userprofile);
       }
 
    }
