@@ -10,11 +10,9 @@ namespace Social.Application.UserProfileCQRS.CommandHandlers
    public class CreateUserProfileCommandHandler : IRequestHandler<CreateUserProfileCommand, UserProfile>
    {
       private readonly AppDbContext _context;
-      private readonly IMapper _mapper;
-      public CreateUserProfileCommandHandler(AppDbContext context, IMapper mapper)
+      public CreateUserProfileCommandHandler(AppDbContext context)
       {
          _context = context;
-         _mapper = mapper;
       }
       async Task<UserProfile> IRequestHandler<CreateUserProfileCommand, UserProfile>.Handle(CreateUserProfileCommand request, CancellationToken cancellationToken)
       {
