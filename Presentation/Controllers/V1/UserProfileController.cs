@@ -76,10 +76,13 @@ namespace Social.Presentation.Controllers.V1
       {
          //* get the command from the API.Contract
          var command = _mapper.Map<UpdateUserProfileCommand>(profileDto);
+
          //* the API.Contract has the basic info without the user id, but command handler expect from the command the profileId, so we need to add it here
          command.profileId = Guid.Parse(id);
-         //* get the response from the mediator
+         
+         //* get the generic response from the mediator
          var response = await _mediator.Send(command);
+         
          return NoContent();
       }
 

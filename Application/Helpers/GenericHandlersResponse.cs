@@ -1,3 +1,5 @@
+using Social.Application.Constants;
+
 namespace Social.Application.Helpers
 {
    public class GenericHandlersResponse<T> where T : class
@@ -7,6 +9,6 @@ namespace Social.Application.Helpers
 
       public bool IsSuccess {get; set;}
 
-      public IEnumerable<string> Errors {get; set;}
+      public IEnumerable<Error> Errors {get; set;}
    }
 }

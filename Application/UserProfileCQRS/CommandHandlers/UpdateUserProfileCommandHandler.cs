@@ -6,6 +6,7 @@ using Microsoft.EntityFrameworkCore;
 using Social.Domain.ValueObjects.UserProfile;
 using Social.Domain.Aggregates.UserProfileAggregate;
 using Social.Application.Helpers;
+using Social.Application.Constants;
 namespace Social.Application.UserProfileCQRS.CommandHandlers
 {
    public class UpdateUserProfileCommandHandler : IRequestHandler<UpdateUserProfileCommand, GenericHandlersResponse<UserProfile>>
@@ -30,7 +31,12 @@ namespace Social.Application.UserProfileCQRS.CommandHandlers
             if (existingProfile is null)
             {
                response.IsSuccess = false;
-               response.Errors.Append($"There is no user profile with id = {request.profileId}");
+               response.Errors.Append(
+                  new Error{
+                     Code = ErrorCode.NotFound,
+                     Message = $"There is no user profile with id = {request.profileId}"
+                  }
+               );
                return response;
             }
 
@@ -58,7 +64,12 @@ namespace Social.Application.UserProfileCQRS.CommandHandlers
          catch(Exception ex)
          {
             response.IsSuccess = false;
-            response.Errors.Append(ex.Message);
+            response.Errors.Append(
+               new Error{
+                  Code = ErrorCode.ServerError,
+                  Message = ex.Message
+               }
+            );
          }
 
          //* return the generic response
