@@ -9,9 +9,8 @@ using Social.Presentation.Common;
 using Social.Application.Constants;
 namespace Social.Presentation.Controllers.V1
 {
-   [ApiController]
    [Route("api/v{version:apiVersion}/profile")]
-   public class UserProfileController : ControllerBase
+   public class UserProfileController : BaseController
    {
       //! Inject the mediator pattern to send commands
       private readonly IMediator _mediator;
@@ -86,39 +85,8 @@ namespace Social.Presentation.Controllers.V1
 
          //=> API Validation Errors 
          if ( ! response.IsSuccess)
-         {
-            // handling the not found error
-            if (response.Errors.Any(E => E.Code == ErrorCode.NotFound))
-            {
-               var NotFoundError = response.Errors.Where(e => e.Code == ErrorCode.NotFound).FirstOrDefault();
-               
-               // define the api-layer error because we should return json object to follow the rest principls
-               var ApiError = new ErrorResponse
-               {
-                  StatusCode = ((int)NotFoundError.Code),
-                  StatusPhrase = "Not Found",
-                  Timespan = DateTime.Now
-               };
-               ApiError.Errors.Add(NotFoundError.Message);
-               
-               return NotFound(ApiError);
-            }
-            // handling server errors
-            if (response.Errors.Any(E => E.Code == ErrorCode.ServerError))
-            {
-               var ServerError = response.Errors.Where(e => e.Code == ErrorCode.ServerError).FirstOrDefault();
-               
-               var ApiError = new ErrorResponse
-               {
-                  StatusCode = ((int)ServerError.Code),
-                  StatusPhrase = "Server Error",
-                  Timespan = DateTime.Now
-               };
-               ApiError.Errors.Add(ServerError.Message);
-
-               return StatusCode(ApiError.StatusCode ,ApiError);
-            }
-         }         
+            return ErrorHandlingPipeline(response.Errors);
+          
          return NoContent();
       }
 
