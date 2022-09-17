@@ -1,9 +1,10 @@
 using Social.Domain.Aggregates.UserProfileAggregate;
 using MediatR;
+using Social.Application.Helpers;
 namespace Social.Application.UserProfileCQRS.Commands
 {
-   // we don't need to return anything from the update command handler at now .. 
-   public class UpdateUserProfileCommand : IRequest
+   // we will return the updated user profile
+   public class UpdateUserProfileCommand : IRequest<GenericHandlersResponse<UserProfile>>
    {
       // The id is very important to be given here when the API layer create this command, so we can specify which user 
       public Guid profileId { get; set; }
