@@ -30,6 +30,9 @@ namespace Social.Presentation.Controllers.V1
          //* utlize the mediator to get the response
          var response = await _mediator.Send(query);
 
+         if (!response.IsSuccess)
+            return ErrorHandlingPipeline(response.Errors);
+
          //* map the response according to the API contract
          var profiles = _mapper.Map<IEnumerable<GetProfile>>(response);
 
@@ -47,6 +50,10 @@ namespace Social.Presentation.Controllers.V1
          };
          //* utilize the mediator to get the response
          var response = await _mediator.Send(query);
+
+         if (!response.IsSuccess)
+            return ErrorHandlingPipeline(response.Errors);
+            
          //* map the response to the api contract
          var profile = _mapper.Map<GetProfile>(response);
          //* return the response to the end user
