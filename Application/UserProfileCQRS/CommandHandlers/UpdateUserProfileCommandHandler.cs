@@ -16,31 +16,30 @@ namespace Social.Application.UserProfileCQRS.CommandHandlers
       {
          _context = context;
       }
-      // we don't need to return anything so we will return the Task<Unit> .. 
+      //! we don't need to return anything so we will return the Task<Unit> .. 
       public async Task<GenericHandlersResponse<UserProfile>> Handle(UpdateUserProfileCommand request, CancellationToken cancellationToken)
       {
-         //* Create an instance of the generic response 
+         //! Create an instance of the generic response 
          var response = new GenericHandlersResponse<UserProfile>();
 
          try
          {
-            //* utlize the Db Context to get the user profile from the database
+            //! utlize the Db Context to get the user profile from the database
             var existingProfile = await _context.Profiles.Where(p => p.UserProfileId == request.profileId).SingleOrDefaultAsync();
 
-            //* Application Layer Validation <<
+            //! Application Layer Validation <<
             if (existingProfile is null)
             {
                response.IsSuccess = false;
-               response.Errors.Append(
-                  new Error{
-                     Code = ErrorCode.NotFound,
-                     Message = $"There is no user profile with id = {request.profileId}"
-                  }
-               );
+               var error = new Error{
+                  Code = ErrorCode.NotFound,
+                  Message = $"There is no user profile with id = {request.profileId}"
+               };
+               response.Errors.Add(error);
                return response;
             }
 
-            //* create instance of the basic info object
+            //! create instance of the basic info object
             var basicInfo = BasicInfo.Create(
                request.FirstName == null ? existingProfile.BasicInfo.FirstName : request.FirstName,
                request.LastName== null ? existingProfile.BasicInfo.LastName : request.LastName,
@@ -50,29 +49,29 @@ namespace Social.Application.UserProfileCQRS.CommandHandlers
                request.DateOfBirth == null ? existingProfile.BasicInfo.DateOfBirth : request.DateOfBirth
             );
 
-            //* update the basic info using the domain-entity behaviour method
+            //! update the basic info using the domain-entity behaviour method
             existingProfile.UpdateProfile(basicInfo);
 
-            //* update the user profile through the context
+            //! update the user profile through the context
             _context.Profiles.Update(existingProfile);
             await _context.SaveChangesAsync();
             
-            //* handle the response properties 
+            //! handle the response properties 
             response.IsSuccess = true;
             response.Payload = existingProfile;
          }
          catch(Exception ex)
          {
             response.IsSuccess = false;
-            response.Errors.Append(
-               new Error{
-                  Code = ErrorCode.ServerError,
-                  Message = ex.Message
-               }
-            );
+            var error = new Error
+            {
+               Code = ErrorCode.ServerError,
+               Message = ex.Message
+            };
+            response.Errors.Add(error);
          }
 
-         //* return the generic response
+         //! return the generic response
          return response;
       }
    }

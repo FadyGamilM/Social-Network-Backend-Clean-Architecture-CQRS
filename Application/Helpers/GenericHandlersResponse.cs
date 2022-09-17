@@ -9,6 +9,6 @@ namespace Social.Application.Helpers
 
       public bool IsSuccess {get; set;}
 
-      public IEnumerable<Error> Errors {get; set;}
+      public List<Error> Errors {get; set;} = new List<Error>();
    }
 }
