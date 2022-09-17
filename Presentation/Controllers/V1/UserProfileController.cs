@@ -64,10 +64,13 @@ namespace Social.Presentation.Controllers.V1
          //* the mediator will be responsible for selecting which handler to choose for this command
          var response  = await _mediator.Send(command);
 
+         if (!response.IsSuccess)
+            return ErrorHandlingPipeline(response.Errors);
+
          //* Map the response to the contract 
          var userprofile = _mapper.Map<GetProfile>(response);
 
-         return CreatedAtAction(nameof(GetProfileById), new { id = response.UserProfileId}, userprofile);
+         return CreatedAtAction(nameof(GetProfileById), new { id = response.Payload.UserProfileId}, userprofile);
       }
 
       // PATCH req : update any field of an existing user profile
@@ -101,9 +104,11 @@ namespace Social.Presentation.Controllers.V1
          
          var response = await _mediator.Send(command);
 
+         if (!response.IsSuccess)
+            return ErrorHandlingPipeline(response.Errors);
+
          return NoContent();
       }
-
    }
 }
 
